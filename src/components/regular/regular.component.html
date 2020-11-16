@@ -1,0 +1,8 @@
+<!-- 正则校验 -->
+<textarea
+  nz-input
+  placeholder="请输入数字"
+  [(ngModel)]="value"
+  [nzAutosize]="{ minRows: 2, maxRows: 6 }"
+  (blur)="blurNum()"
+></textarea>

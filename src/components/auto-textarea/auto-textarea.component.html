@@ -1,0 +1,5 @@
+<!-- 自动撑高  多行文本框 -->
+<div class="contanier">
+    <div class="text">{{ value }}</div>
+    <textarea class="textarea" [ngModel]="value" (ngModelChange)="onModelChange($event)"></textarea>
+</div>

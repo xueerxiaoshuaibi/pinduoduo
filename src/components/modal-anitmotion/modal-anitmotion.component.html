@@ -1,0 +1,19 @@
+<div class="out">
+    <div class="modal">
+        <div>
+            <div *ngFor="let item of items; let i = index" class="pic">
+                <div class="title">{{ item.title }}</div>
+                <div class="heart">
+                    <img class="out-img" src="../assets/small.png" />
+                </div>
+                <div class="rinbow">
+                    <img class="inner-img" src="../assets/revolve.png" />
+                </div>
+                <div class="type">
+                    <img [src]="item.images" class="type-img" />
+                </div>
+                <div>{{ item.data[0] }}</div>
+            </div>
+        </div>
+    </div>
+</div>

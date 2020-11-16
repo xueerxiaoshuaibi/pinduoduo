@@ -1,0 +1,15 @@
+<nz-modal
+  [(nzVisible)]="isVisible"
+  nzTitle="请输入小写金额"
+  (nzOnCancel)="handleCancel()"
+  (nzOnOk)="handleOk()"
+>
+  <nz-input-number [(ngModel)]="value" [nzStep]="0.01"></nz-input-number>
+</nz-modal>
+<input
+  nz-input
+  id="input-id"
+  placeholder=""
+  (focus)="inputFocus()"
+  [(ngModel)]="money"
+/>

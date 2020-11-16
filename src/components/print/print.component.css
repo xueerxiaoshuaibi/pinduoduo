@@ -1,0 +1,18 @@
+@media print {
+  INPUT {
+    display: none;
+  }
+}
+.pageSeparator {
+  page-break-after: always;
+  height: 100%;
+}
+tr {
+  border-collapse: collapse;
+  border: none;
+   height: 25px;
+}
+    tr td {
+  border: 1px solid #000;
+  font-size: 14px;
+}

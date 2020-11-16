@@ -1,0 +1,180 @@
+.out {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.title {
+    text-align: center;
+    height: 50px;
+    color: #fff;
+    line-height: 50px;
+    font-size: 16px;
+}
+
+.modal {
+    width: 400px;
+    height: 420px;
+    position: relative;
+    left: 50%;
+    margin-left: -210px;
+    top: 50%;
+    margin-top: -200px;
+    background: rgba(25, 29, 65, 1) url("../../assets/backgroud.png") no-repeat;
+    background-position-y: bottom;
+    background-size: contain;
+}
+
+.heart {
+    animation: heartbeat 1s infinite;
+    -webkit-animation: heartbeat 1s infinite;
+    position: absolute;
+    left: 50%;
+    top: 50px;
+    margin-left: -55px;
+    /* Safari 和 Chrome */
+    /* filter: drop-shadow(0px 0px 20px rgb(255, 20, 20)); */
+}
+
+.content {
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    height: 130px;
+    overflow: hidden;
+    vertical-align: bottom;
+}
+
+.type {
+    position: absolute;
+    left: 50%;
+    top: 84px;
+    margin-left: -18px;
+}
+
+.type-img {
+    width: 36px;
+    height: 40px;
+}
+
+.content-body {
+    position: relative;
+}
+
+.content>.content-body :hover {
+    animation-play-state: paused;
+}
+
+.rinbow {
+    position: absolute;
+    left: 50%;
+    top: 64px;
+    margin-left: -40px;
+    animation: rotate 6s linear infinite;
+}
+
+@keyframes heartbeat {
+    0% {
+        transform: rotate(45deg) scale(0.8, 0.8);
+        opacity: 1;
+    }
+    25% {
+        transform: rotate(45deg) scale(1, 1);
+        opacity: 0.8;
+    }
+    50% {
+        transform: rotate(45deg) scale(1.3, 1.3);
+        opacity: 0.8;
+    }
+    100% {
+        transform: rotate(45deg) scale(1.5, 1.5);
+        opacity: 1;
+    }
+}
+
+@keyframes zoom1 {
+    0% {
+        transform: scale();
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotateZ(0deg);
+        /*从0度开始*/
+    }
+    100% {
+        transform: rotateZ(360deg);
+        /*360度结束*/
+    }
+}
+
+@keyframes scrollChild {
+    0% {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-100%);
+    }
+}
+
+.out-img {
+    width: 110px;
+    height: 110px;
+}
+
+.inner-img {
+    width: 80px;
+    height: 80px;
+}
+
+
+/*  */
+
+#img1,
+#img2,
+#img3,
+#img4 {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+    animation-name: test;
+    animation-duration: 5s;
+    opacity: 0;
+}
+
+#img2 {
+    animation-delay: 5s;
+    -webkit-animation-delay: 5s;
+}
+
+#img3 {
+    animation-delay: 10s;
+    -webkit-animation-delay: 10s;
+}
+
+#img4 {
+    animation-delay: 15s;
+    -webkit-animation-delay: 15s;
+}
+
+@-webkit-keyframes test {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {}
+}
+
+@keyframes test {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {}
+}
