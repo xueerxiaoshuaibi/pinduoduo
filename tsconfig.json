@@ -17,7 +17,15 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "wx-ui": [
+        "project/wx-ui/index.ts"
+      ],
+      "wx-ui/*": [
+        "projects/wx-ui/*"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,

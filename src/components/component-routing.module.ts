@@ -4,10 +4,7 @@ import { AutomaticExtensionComponent } from "./automatic-extension/automatic-ext
 import { NumberComponent } from "./number/number.component";
 import { EchartCompoComponent } from "./echart-compo/echart-compo.component";
 
-const routes: Routes = [
-  { path: "extension", component: AutomaticExtensionComponent },
-  { path: "num", component: NumberComponent },
-];
+const routes: Routes = [];
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],

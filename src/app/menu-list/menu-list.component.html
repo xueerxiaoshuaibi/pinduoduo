@@ -33,18 +33,18 @@
             nz-menu-item
             nz-tooltip
             id="1"
-            (click)="itemClick(1)"
+            (click)="itemClick(0)"
             nzPlacement="right"
             [nzTitle]="isCollapsed ? '组件' : ''"
             nzSelected
           >
             <i nz-icon nzType="mail"></i>
-            <span>组件</span>
+            <span>自动延长输入框</span>
             </li>
             <li nz-submenu nzTitle="Navigation Two" nzIcon="appstore">
                 <ul>
                     <li nz-menu-item (click)="itemClick(2)">Option 5</li>
-                    <li nz-menu-item>Option 6</li>
+                    <li nz-menu-item (click)="itemClick('dynamic')">动态组件</li>
                     <li nz-submenu nzTitle="Submenu">
                         <ul>
                             <li nz-menu-item (click)="itemClick(3)">echart</li>
@@ -72,8 +72,8 @@
                             <i nz-icon nzType="close" (click)="closeTab(tab)" class="ant-tabs-close-x"></i>
                         </div>
                     </ng-template>
-                    <!-- <router-outlet></router-outlet> -->
-                    <app-component-box [comItem]="com"></app-component-box>
+                    <router-outlet></router-outlet>
+                    <!-- <app-component-box [comItem]="com"></app-component-box> -->
                 </nz-tab>
             </nz-tabset>
         </nz-content>

@@ -4,12 +4,19 @@ import { AutomaticExtensionComponent } from "src/components/automatic-extension/
 import { MenuListComponent } from "./menu-list.component";
 import { CaseWizardComponent } from "src/components/case-wizard/case-wizard.component";
 import { EchartCompoComponent } from "src/components/echart-compo/echart-compo.component";
+import { NumberComponent } from "src/components/number/number.component";
+import { DynamicComponent } from "src/components/dynamic/dynamic.component";
 
 const routes: Routes = [
   {
     path: "",
     component: MenuListComponent,
-    children: [{ path: "echart", component: EchartCompoComponent }],
+    children: [
+      { path: "echart", component: EchartCompoComponent },
+      { path: "num", component: NumberComponent },
+      { path: "extension", component: AutomaticExtensionComponent },
+      { path: "dynamic", component: DynamicComponent },
+    ],
   },
 ];
 @NgModule({

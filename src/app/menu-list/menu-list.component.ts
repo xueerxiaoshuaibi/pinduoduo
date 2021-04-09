@@ -19,7 +19,8 @@ export class MenuListComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-    this.com = this.comSrv.list1;
+    // this.com = this.comSrv.list1;
+    this.itemClick(0);
   }
 
   back() {
@@ -42,12 +43,16 @@ export class MenuListComponent implements OnInit {
     this.selectIndex = this.tabs.length - 1;
     console.log(this.tabs);
     console.log(this.selectIndex);
-    if (tab == 1) {
-      this.router.navigate(["/extension"], {});
+    if (tab == 0) {
+      this.router.navigate(["extension"], { relativeTo: this.route });
+    } else if (tab == 1) {
+      // this.router.navigate(["extension"], {});
     } else if (tab == 2) {
-      this.router.navigate(["/num"], {});
+      this.router.navigate(["num"], { relativeTo: this.route });
     } else if (tab == 3) {
       this.router.navigate(["echart"], { relativeTo: this.route });
+    } else if (tab == "dynamic") {
+      this.router.navigate(["dynamic"], { relativeTo: this.route });
     }
   }
 }

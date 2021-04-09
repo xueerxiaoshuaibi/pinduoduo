@@ -18,6 +18,10 @@ import { AutoTextareaComponent } from "./auto-textarea/auto-textarea.component";
 import { ModalAnitmotionComponent } from "./modal-anitmotion/modal-anitmotion.component";
 import { EchartCompoComponent } from "./echart-compo/echart-compo.component";
 import { ComponentBoxComponent } from "./component-box/component-box.component";
+import { DynamicComponent } from "./dynamic/dynamic.component";
+import { HeroJobAdComponent } from "./dynamic/hero-job-ad.component";
+import { HeroProfileComponent } from "./dynamic/hero-profile.component";
+import { AdDirective } from "src/app/directive/ad.directive";
 
 const list = [
   DivBulgeComponent,
@@ -33,9 +37,12 @@ const list = [
   AutoTextareaComponent,
   ModalAnitmotionComponent,
   EchartCompoComponent,
+  DynamicComponent,
+  HeroJobAdComponent,
+  HeroProfileComponent,
 ];
 @NgModule({
-  declarations: [...list],
+  declarations: [...list, AdDirective],
   imports: [
     ReactiveFormsModule,
     NzIconModule,

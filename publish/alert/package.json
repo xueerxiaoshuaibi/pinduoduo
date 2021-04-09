@@ -1,0 +1,13 @@
+{
+  "main": "../bundles/defsoul-alert.umd.js",
+  "module": "../fesm5/defsoul-alert.js",
+  "es2015": "../fesm2015/defsoul-alert.js",
+  "esm5": "../esm5/alert/defsoul-alert.js",
+  "esm2015": "../esm2015/alert/defsoul-alert.js",
+  "fesm5": "../fesm5/defsoul-alert.js",
+  "fesm2015": "../fesm2015/defsoul-alert.js",
+  "typings": "defsoul-alert.d.ts",
+  "metadata": "defsoul-alert.metadata.json",
+  "sideEffects": false,
+  "name": "defsoul/alert"
+}

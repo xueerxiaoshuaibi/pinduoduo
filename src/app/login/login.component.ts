@@ -14,6 +14,7 @@ export class LoginComponent implements OnInit {
   constructor(private fb: FormBuilder, private router: Router) {}
 
   ngOnInit() {
+    console.log("")
     this.validateForm = this.fb.group({
       userName: [null, [Validators.required]],
       password: [null, [Validators.required]],
@@ -23,5 +24,7 @@ export class LoginComponent implements OnInit {
 
   menu() {
     this.router.navigate(["/menu"], { queryParams: this.data });
+    localStorage.setItem('loginTimes',JSON.stringify(1))
+
   }
 }

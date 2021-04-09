@@ -1,0 +1,21 @@
+{
+  "name": "defsoul",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^8.2.14",
+    "@angular/core": "^8.2.14"
+  },
+  "main": "bundles/defsoul.umd.js",
+  "module": "fesm5/defsoul.js",
+  "es2015": "fesm2015/defsoul.js",
+  "esm5": "esm5/defsoul.js",
+  "esm2015": "esm2015/defsoul.js",
+  "fesm5": "fesm5/defsoul.js",
+  "fesm2015": "fesm2015/defsoul.js",
+  "typings": "defsoul.d.ts",
+  "metadata": "defsoul.metadata.json",
+  "sideEffects": false,
+  "dependencies": {
+    "tslib": "^1.9.0"
+  }
+}
