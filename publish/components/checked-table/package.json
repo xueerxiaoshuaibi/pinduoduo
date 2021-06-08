@@ -1,0 +1,13 @@
+{
+  "main": "../../bundles/defsoul-components-checked-table.umd.js",
+  "module": "../../fesm5/defsoul-components-checked-table.js",
+  "es2015": "../../fesm2015/defsoul-components-checked-table.js",
+  "esm5": "../../esm5/components/checked-table/defsoul-components-checked-table.js",
+  "esm2015": "../../esm2015/components/checked-table/defsoul-components-checked-table.js",
+  "fesm5": "../../fesm5/defsoul-components-checked-table.js",
+  "fesm2015": "../../fesm2015/defsoul-components-checked-table.js",
+  "typings": "defsoul-components-checked-table.d.ts",
+  "metadata": "defsoul-components-checked-table.metadata.json",
+  "sideEffects": false,
+  "name": "defsoul/components/checked-table"
+}

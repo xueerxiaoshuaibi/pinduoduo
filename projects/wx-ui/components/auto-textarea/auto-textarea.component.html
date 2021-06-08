@@ -1,0 +1,5 @@
+<div class="textareaBox">
+    <div class="textareaFake">{{value}}</div>
+    <textarea #textarea class="textarea" [placeholder]="placeHolder" [(ngModel)]="value" (ngModelChange)="onModelChange($event)" (blur)="onBlur()"> </textarea>
+    <div class="count" [class.isCount]="!isCount" style="user-select: none;">{{getLength()+'/'+maxlength}}</div>
+</div>

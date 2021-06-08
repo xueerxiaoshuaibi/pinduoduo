@@ -14,6 +14,8 @@ import { TransformComponent } from "./transform/transform.component";
 import { DragDropModule } from "@angular/cdk/drag-drop";
 import { MenuListModule } from "./menu-list/menu-list.module";
 import { MyLibModule } from "projects/wx-ui/my-lib.module";
+// import { PdfViewerModule } from 'ng2-pdf-viewer';
+// import { PdfJsViewerModule} from 'ng2-pdfjs-viewer';
 @NgModule({
   declarations: [AppComponent, TransformComponent],
   imports: [
@@ -30,7 +32,9 @@ import { MyLibModule } from "projects/wx-ui/my-lib.module";
     CommonModule,
     DragDropModule,
     MenuListModule,
-    MyLibModule
+    MyLibModule,
+    // PdfViewerModule,
+    // PdfJsViewerModule,
   ],
   providers: [{ provide: NZ_I18N, useValue: en_US }],
   bootstrap: [AppComponent],

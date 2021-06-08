@@ -31,7 +31,7 @@ var AlertComponent = /** @class */ (function () {
     AlertComponent.decorators = [
         { type: Component, args: [{
                     selector: "wx-alert",
-                    template: "<div>test</div>",
+                    template: "<div>123</div>\r\n",
                     styles: [""]
                 }] }
     ];

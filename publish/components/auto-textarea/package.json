@@ -1,0 +1,13 @@
+{
+  "main": "../../bundles/defsoul-components-auto-textarea.umd.js",
+  "module": "../../fesm5/defsoul-components-auto-textarea.js",
+  "es2015": "../../fesm2015/defsoul-components-auto-textarea.js",
+  "esm5": "../../esm5/components/auto-textarea/defsoul-components-auto-textarea.js",
+  "esm2015": "../../esm2015/components/auto-textarea/defsoul-components-auto-textarea.js",
+  "fesm5": "../../fesm5/defsoul-components-auto-textarea.js",
+  "fesm2015": "../../fesm2015/defsoul-components-auto-textarea.js",
+  "typings": "defsoul-components-auto-textarea.d.ts",
+  "metadata": "defsoul-components-auto-textarea.metadata.json",
+  "sideEffects": false,
+  "name": "defsoul/components/auto-textarea"
+}

@@ -153,7 +153,7 @@ export class CheckedTableComponent implements OnInit {
   /*
    *全选或者全不选的方法
    */
-  onAllChecked(e) {
+  onAllChecked(e?) {
     this.getIsAllChecked();
     if (this.isAllChecked) {
       this.dataSet.forEach((ele) => {
@@ -170,7 +170,7 @@ export class CheckedTableComponent implements OnInit {
     console.log(this.dataSet);
   }
   //单行被选中或者取消选中
-  onItemChecked(item, i) {
+  onItemChecked(item) {
     item.checked = !item.checked;
     console.log(this.dataSet);
     this.setNull();
